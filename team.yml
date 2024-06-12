@@ -1,0 +1,16 @@
+Amy Santiago:
+  img: amy-santiago.png
+  badges:
+    - Clean Power:
+        earned_at: 2024-06-11
+        desc: Removed all the legacy of user session logic in old stack modules.
+    - Release Saviour:
+        earned_at: 2024-03-04
+        desc: Saved the day when figuring out the traffic spikes on Offers Service when releasing the new checkout page.
+
+Ray Holt:
+  img: ray-holt.png
+  badges:
+    - Clean Power:
+        earned_at: 2024-06-11
+        desc: Removed all the legacy of user session logic in old stack modules.
