@@ -1,7 +1,11 @@
 Clean Power:
-  desc: Simplified and cleaned-up older code
+  name: Clean Power
+  shortDesc: Simplified and cleaned-up older code
+  desc: Simplified and cleaned-up older code. Awarded for people going the extra mile in not just delivering their user story, but also cleaning up any related code!
   img: broom.png
 
 Release Saviour:
-  desc: Jumped in and addressed a bug holding up a roll-out
+  name: Release Saviour
+  shortDesc: Jumped in and addressed a bug holding up a roll-out
+  desc: Jumped in and addressed a bug holding up a roll-out. This is awarded every time somebody stood out while investigating a nasty blocker during the deployment process.
   img: super-hero.png

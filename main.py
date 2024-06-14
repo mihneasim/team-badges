@@ -21,12 +21,22 @@ if __name__ == '__main__':
 
     team.sort(key=lambda x: x['name'])
 
-    template = env.get_template("team-member.md")
+    team_tpl = env.get_template("team-member.md")
+    badge_tpl = env.get_template("badge.md")
     try:
-        os.unlink('output.md')
+        os.unlink('badges.md')
     except FileNotFoundError:
         pass
-    with open('output.md', 'a') as output_file:
+    try:
+        os.unlink('team.md')
+    except FileNotFoundError:
+        pass
+
+    with open('badges.md', 'a') as output_file:
+        for badge in badges.values():
+            output_file.write(badge_tpl.render(badge=badge))
+
+    with open('team.md', 'a') as output_file:
         for user in team:
-            output_file.write(template.render(badges=badges, user=user))
-    print("Check output.md!")
+            output_file.write(team_tpl.render(badges=badges, user=user))
+    print("Check badges.md and team.md!")
