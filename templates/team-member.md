@@ -1,4 +1,4 @@
-## {{ user.name }}
+### {{ user.name }}
 {% for badge in user.badges %}
-![alt text](badges-img/{{ badges[badge.name].img }} "Earned {{ badge.earned_at }}: {{ badge.desc or badges[badge.name].shortDesc }}"){% endfor %}
+<img src="badges-img/{{ badges[badge.name].img }}" title="Earned {{ badge.earned_at }}: {{ badge.desc or badges[badge.name].shortDesc }}" width="80">{% endfor %}
 

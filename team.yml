@@ -14,3 +14,6 @@
     - name: Clean Power
       earned_at: 2024-06-11
       desc: Removed deprecated methods in application state manager
+    - name: SCA Ruler
+      earned_at: 2024-06-18
+      desc: Found that old project still using the vulnerable 2.15.0 Log4J

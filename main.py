@@ -33,8 +33,18 @@ if __name__ == '__main__':
         pass
 
     with open('badges.md', 'a') as output_file:
-        for badge in badges.values():
-            output_file.write(badge_tpl.render(badge=badge))
+        badge_tuples = []
+        previous = None
+        for (index, badge) in enumerate(badges.values()):
+            if (index % 2 == 1):
+                badge_tuples.append((previous, badge))
+                previous = None
+            else:
+                previous = badge
+        if previous is not None:
+            badge_tuples.append((previous, None))
+
+        output_file.write(badge_tpl.render(badge_tuples=badge_tuples))
 
     with open('team.md', 'a') as output_file:
         for user in team:

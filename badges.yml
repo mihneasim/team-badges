@@ -9,3 +9,9 @@ Release Saviour:
   shortDesc: Jumped in and addressed a bug holding up a roll-out
   desc: Jumped in and addressed a bug holding up a roll-out. This is awarded every time somebody stood out while investigating a nasty blocker during the deployment process.
   img: super-hero.png
+
+SCA Ruler:
+  name: SCA Ruler
+  shortDesc: Addressed a vulnerability as reported by SCA.
+  desc: Jumped in and upgraded a vulnerable library as reported by Software Composition Analysis process.
+  img: sca.png
